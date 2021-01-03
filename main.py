@@ -1,4 +1,6 @@
-
+# __ add more function caching,
+# __ replace some lists with sets,
+# __ add more pythonic one-liners
 
 #----------------------------------------------------------------------------------------
 
