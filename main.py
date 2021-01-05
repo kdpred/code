@@ -2287,12 +2287,12 @@ def genexamples():
         tmp.append(elem[0])
 
     rmrules = selectrmrules("GNA")
-    dcrules = selectdcrules("GNA")
 
     threadlist1 = []
     q1 = queue.Queue()
 
     for conditionrm in rmrules.selectrmrule():
+        dcrules = selectdcrules("GNA")
         for conditiondc in dcrules.selectdcrule():
             for key in fd:
                 tmp_x = tmp.index(key)
