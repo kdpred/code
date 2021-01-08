@@ -3292,9 +3292,9 @@ def run():
             sqlquery = """ update data.nodes set """ + rhskey + """=\'""" + rhsval + """\'
                                where """ + lhs + """;"""
 
-            if len(rhsval) > 0 and (rhsval.count('"') > 1):
+            if len(rhsval) > 0:
                 #print(sqlquery)
-                if sqlquery.count(')') == sqlquery.count('(') and (str(sqlquery)).count('=")') == 0:
+                if sqlquery.count(')') == sqlquery.count('(') and (str(sqlquery)).count("=')") == 0:
                     # print(sqlquery)
 
                     lock.acquire()
